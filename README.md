@@ -22,13 +22,13 @@ The extension currently implements a selected subset of WCAG 2.2 rules suitable 
 - R7_ROLE_BUTTON: Custom buttons must be keyboard operable(WCAG 2.2 – 2.1.1)
 
 ## Installation and Configuration
-1- Clone the repository
-2- run npm install 
-3- run npm compile
-4- Start Debugging and select 'Extension Development Host'
-5- For AI Usage setup API key from VS Code Settings under Wcag-ai-helper: Api Key
-6- Go to the source code, press Ctrl+Shift+P / Cmd+Shift+P and select 'Scan current file for accessibility issues'
-7- After the first run accessibilty issues should be visible under 'Problems,' and the WCAG-ai-helper will detect changes and re-run accessibility checks for that file if it's needed.
+- Clone the repository
+- run npm install 
+- run npm compile
+- Start Debugging and select 'Extension Development Host'
+- For AI Usage setup API key from VS Code Settings under Wcag-ai-helper: Api Key
+- Go to the source code, press Ctrl+Shift+P / Cmd+Shift+P and select 'Scan current file for accessibility issues'
+- After the first run, accessibility issues should be visible under 'Problems,' and the WCAG-ai-helper will detect changes and re-run accessibility checks for that file if it's needed.
 
 ## License 
 This project is developed for academic research purposes.
