@@ -17,7 +17,7 @@ The extension currently implements a selected subset of WCAG 2.2 rules suitable 
 - R2_LABEL: Form controls must have an accessible name(WCAG 2.2 – 3.3.2, 4.1.2)
 - R3_BUTTON: Buttons must have visible text or an accessible name(WCAG 2.2 – 4.1.2)
 - R4_LINK: Links must have descriptive text(WCAG 2.2 – 2.4.4)
-- R5_H1: Document should contain exactly one '<h1>'(WCAG 2.2 – 1.3.1)
+- R5_H1: Document should contain exactly one h1 tag(WCAG 2.2 – 1.3.1)
 - R6_TABINDEX: Avoid positive tabindex values(WCAG 2.2 – 2.4.3)
 - R7_ROLE_BUTTON: Custom buttons must be keyboard operable(WCAG 2.2 – 2.1.1)
 
