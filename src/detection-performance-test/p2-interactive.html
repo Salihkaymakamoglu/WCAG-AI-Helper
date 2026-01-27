@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>P2 - Interactive Page</title>
+</head>
+<body>
+  <h1>Dashboard</h1>
+
+  <a href="#main" tabindex="5">Skip to main content</a>
+
+  <main id="main">
+    <div
+      role="button"
+      onclick="alert('Opening modal');"
+      class="fake-button"
+    >
+      Open modal
+    </div>
+
+    <div
+      role="button"
+      tabindex="0"
+      onclick="alert('Saving');"
+      onkeydown="if (event.key === 'Enter' || event.key === ' ') { alert('Saving'); }"
+    >
+      Save changes
+    </div>
+
+    <p>
+      Latest report:
+      <a href="/reports/2025">here</a>
+    </p>
+
+    <p>
+      More info:
+      <a href="https://example.com/reports">https://example.com/reports</a>
+    </p>
+  </main>
+</body>
+</html>

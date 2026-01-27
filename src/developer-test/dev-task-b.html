@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Developer Task B - Project Dashboard</title>
+    <link rel="stylesheet" href="dev-task-b.css" />
+  </head>
+  <body>
+    <h1>Project Dashboard</h1>
+    <h1>Team Overview</h1>
+
+    <header>
+      <img src="team-photo.jpg" alt="" />
+
+      <img src="divider.png" alt="" role="presentation" />
+    </header>
+
+    <main>
+      <section aria-labelledby="summary-heading">
+        <h2 id="summary-heading">Summary</h2>
+
+        <div class="summary-tile" tabindex="5">
+          <h3>Open tasks</h3>
+          <p>17 tasks are currently open.</p>
+        </div>
+
+        <div class="summary-tile">
+          <h3>Completed tasks</h3>
+          <p>43 tasks were completed this month.</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="actions-heading">
+        <h2 id="actions-heading">Primary actions</h2>
+
+        <div
+          role="button"
+          tabindex="0"
+          onkeydown="if(event.key==='Enter' || event.key===' ') { this.click(); event.preventDefault(); }"
+          class="action-tile"
+          onclick="alert('Creating project');"
+        >
+          Create new project
+        </div>
+
+        <div
+          role="button"
+          class="action-tile"
+          tabindex="0"
+          onclick="alert('Archiving project');"
+          onkeydown="if (event.key === 'Enter' || event.key === ' ') { alert('Archiving project'); }"
+        >
+          Archive selected project
+        </div>
+      </section>
+
+      <section aria-labelledby="activity-heading">
+        <h2 id="activity-heading">Recent activity</h2>
+
+        <ul>
+          <li>
+            New design files uploaded -
+            <a href="/files/123">here</a>
+          </li>
+          <li>
+            Documentation updated -
+            <a href="https://example.com/docs"> https://example.com/docs </a>
+          </li>
+          <li>
+            New issue created -
+            <a href="/issues/345"> View accessibility audit ticket </a>
+          </li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="filters-heading">
+        <h2 id="filters-heading">Filters</h2>
+
+        <form>
+          <div class="field">
+            <span>Status</span>
+            <select name="status">
+              <option value="">All</option>
+              <option value="open">Open</option>
+              <option value="closed">Closed</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <input type="text" name="search" placeholder="Search by title" />
+          </div>
+
+          <div class="field">
+            <label for="owner">Owner</label>
+            <input id="owner" name="owner" type="text" />
+          </div>
+
+          <button id="filter-btn"></button>
+
+          <button type="submit">Apply filters</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <a href="/accessibility-statement"> View accessibility statement </a>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Developer Task A - Account Settings</title>
+  <link rel="stylesheet" href="dev-task-a.css" />
+</head>
+<body>
+  <header>
+    <h1>Account Settings</h1>
+
+    <img src="user-avatar.png">
+
+    <img src="logo.svg" alt="STK logo">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="/dashboard">Dashboard</a></li>
+      <li><a href="/settings">Settings</a></li>
+      <li><a href="/help">Click here</a></li>
+    </ul>
+  </nav>
+
+  <main id="main">
+    <section aria-labelledby="profile-heading">
+      <h2 id="profile-heading">Profile</h2>
+
+      <form>
+        <div class="field">
+          <label for="display-name">Display name</label>
+          <input id="display-name" name="display-name" type="text">
+        </div>
+
+        <div class="field">
+          <input id="job-title" name="job-title" type="text" placeholder="Job title">
+        </div>
+
+        <div class="field">
+          <input
+            id="company"
+            name="company"
+            type="text"
+            aria-label="Company name"
+            placeholder="Company"
+          >
+        </div>
+
+        <div class="field">
+          <span>Website</span>
+          <input id="website" name="website" type="url">
+        </div>
+
+        <button type="button" class="icon-btn">
+          <span class="icon-star"></span>
+        </button>
+
+        <button type="submit">Save changes</button>
+      </form>
+    </section>
+
+    <section aria-labelledby="notifications-heading">
+      <h2 id="notifications-heading">Notifications</h2>
+
+      <p>
+        <a href="/notifications/email">More</a> |
+        <a href="/notifications/push">Read more</a>
+      </p>
+
+      <p>
+        <a href="/notifications/preferences">
+          Manage notification preferences
+        </a>
+      </p>
+    </section>
+
+    <section aria-labelledby="security-heading">
+      <h2 id="security-heading">Security</h2>
+
+      <form>
+        <div class="field">
+          <input
+            id="current-password"
+            name="current-password"
+            type="password"
+            placeholder="Current password"
+          >
+        </div>
+        <div class="field">
+          <input
+            id="new-password"
+            name="new-password"
+            type="password"
+            placeholder="New password"
+          >
+        </div>
+        <div class="field">
+          <input
+            id="confirm-password"
+            name="confirm-password"
+            type="password"
+            placeholder="Confirm new password"
+          >
+        </div>
+
+        <button type="submit">Update password</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 STK</p>
+  </footer>
+</body>
+</html>
