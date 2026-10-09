@@ -7,7 +7,7 @@ The tool combines rule-based static analysis with AI-assisted suggestions to hel
 	• Real-time accessibility issue detection while editing HTML files
 	• WCAG 2.2–aligned rules (R1–R7) targeting high-impact issues
 	• Developer-friendly diagnostics panel with clear messages
-	• Optional AI-generated fix suggestions
+	• Optional AI-generated fix suggestions.
 	• Safe, controlled auto-fix workflow (manual confirmation required)
 
 ## Implemented WCAG Rules
